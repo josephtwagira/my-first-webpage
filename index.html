@@ -3,38 +3,121 @@
 
 <head>
     <title>jose_first_html</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #F5F5F5;
+            font-family: Arial, chilla;
+            background-color: burlywood;
+            text-align: center;
+            word-spacing: 0cqmax;
         }
 
-    h1 {
-        color: #336699;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #333;
-    }
-    button {
-        background-color: #336699;
-        color: #FFFFFF;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    button:hover {
-        background-color: #264C73
-    }
+        h1 {
+            color: black;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2.5;
+            color: none;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 5rem auto 30rem auto;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 5px;
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        button[type="submit"] {
+            background-color: #336699;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #264C73;
+        }
+
+        footer {
+            background-color: none;
+            color: #333333;
+            text-align: center;
+            height: 20vh;
+        }
+
+        span {
+            font-size: 28px;
+        }
     </style>
+
 </head>
-<!-- put body here -->
-<h1>welcome to my first website</h1>
-<p>alright thank youfor visiting my first websit.This is my first attempt to create a website .I hope you find it
-    innovative . Over and out.</p>
-<button>Click me!</button>
+
+<!-- body starts here -->
+
+<body>
+    <h1>Welcome to kuku feeds uganda </h1>
+    <p>Thank you for visiting my first website.This is my first attempt to create a website .I hope you find it
+        innovative . </p>
+        <p>company location </p>
+        <ul>protein plus
+            Calcium
+            vitamin 
+        </ul>
+    <h2>Sign up</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Submit</button>
+    </form>
+    <nav>GET IT ON GOOGLE PLAY </nav>
+    <nav>LINKS</nav>
+    <nav>TORIZONE</nav>
+    <nav>Social Media</nav>
+
+    <footer>
+        <span>&copy; 2023kuku wazabanga ug🐓</span>
+    </footer>
+
+</body>
 <!-- end of body -->
+
+<script>
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Form submitted!');
+    });
+</script>
 
 </html>
