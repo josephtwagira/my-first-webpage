@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>jose_first_html</title>
 
     <style>
         body {
-            font-family: Arial, chilla;
-            background-color: burlywood;
+            font-family: 'Segoe UI';
+            background-color: rgba(136, 123, 47, 0.526);
             text-align: center;
             word-spacing: 0cqmax;
+            border-width: "50";
         }
 
         h1 {
@@ -25,10 +25,10 @@
 
         form {
             max-width: 400px;
-            margin: 5rem auto 30rem auto;
-            background-color: aliceblue;
-            padding: 20px;
-            border-radius: 10px;
+            margin: 5rem auto 3rem auto;
+            background-color: rgb(126, 144, 160);
+            padding: 8px;
+            border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -71,10 +71,41 @@
             color: #333333;
             text-align: center;
             height: 20vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-variant: small-caps;
+            font-style: oblique;
         }
 
         span {
-            font-size: 28px;
+            font-size: 34px;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: auto;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .moving-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: auto;
+            animation: slide 5s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100vw);
+            }
+
         }
     </style>
 
@@ -83,14 +114,15 @@
 <!-- body starts here -->
 
 <body>
-    <h1>Welcome to kuku feeds uganda </h1>
+    <h1>kuku uganda </h1>
     <p>Thank you for visiting my first website.This is my first attempt to create a website .I hope you find it
         innovative . </p>
-        <p>company location </p>
-        <ul>protein plus
-            Calcium
-            vitamin 
-        </ul>
+    <p><bdo dir="ltr"> location</bdo></p>
+    <ul>protein plus
+       <q><em>kuku ya nyama</em></q> 
+        vitamin
+    </ul>
+
     <h2>Sign up</h2>
     <form>
         <label for="name">Name:</label>
@@ -101,12 +133,17 @@
         <input type="password" id="password" name="password" required><br>
         <button type="submit">Submit</button>
     </form>
-    <nav>GET IT ON GOOGLE PLAY </nav>
-    <nav>LINKS</nav>
-    <nav>TORIZONE</nav>
-    <nav>Social Media</nav>
+    <div class="container">
+        <img src="./images/chicken.gif" alt="ui" width="200" height="auto" class="moving-image2" />
+    </div>
+
+
 
     <footer>
+        <caption>IT ON GOOGLE PLAY</caption>
+        <nav>LINKS</nav>
+        <nav>TORIZONE</nav>
+        <nav>Social Media</nav>
         <span>&copy; 2023kuku wazabanga ug🐓</span>
     </footer>
 

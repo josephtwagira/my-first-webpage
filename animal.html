@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mbarara agrovet</title>
+    <style>
+        body {
+            background-image: url("./images/ankole.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: rgb(60, 125, 181);
+            text-align: center;
+            border-width: "50";
+        }
+
+        form {
+            max-width: 300px;
+            background-color: rgb(144, 144, 209);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0.1rem auto 10rem auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black (0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: black;
+            font-weight: bold;
+        }
+
+        button[type="submit"]:hover {
+            background-color: blue;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: auto;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        footer {
+            text-align: center;
+            height: 20vh;
+            padding: 250px;
+        }
+    </style>
+</head>
+
+<!--body starts starts here-->
+
+<body>
+    <h1>Mbarara Agrovet UG</h1>
+    <h2>P.O Box 354 Mbarara</h2>
+    <h3>Menu</h3>
+    <h4>Sign Up</h4>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="Submit">Submit</button>
+    </form>
+
+    <footer>
+        <span>&copy; @ 2020 ANKOLE CAPITAL </span>
+    </footer>
+
+</body>
+<script>
+    document.querySelector('form').addEvent
+    Listener('submit', function (event) {
+        alert('form sudmitted!');
+    });
+</script>
+
+</html>
